@@ -98,6 +98,35 @@ document.write(text);
       </div>
     </div>
 
+    <br><br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"><h4>For loop, if statement and Break</h4></div>
+        <div class="col-md-12">
+<textarea class="form-control" rows="9">
+<script>
+for (let current = 20; ; current = current + 1) {
+  if (current % 7 == 0) {
+    document.write(current);
+    break;
+  }
+}
+</script>  
+</textarea>
+
+        <script>
+        for (let current = 20; ; current = current + 1) {
+          if (current % 7 == 0) {
+            document.write(current);
+            break;
+          }
+        }
+        </script>
+        </div>
+      </div>
+    </div>
+
 
     <br><br>
     <hr>
@@ -189,14 +218,32 @@ while (number <= 10);
           </script>
         </div>
         <div class="col-md-6">
+        <p>This function asks for name on button click and prompt exists there if you dont type anything. On entering name it says okay and exits.</p>
 <textarea rows="9" class="form-control">
+<button onClick="dislayName();" class="btn btn-default">Ask for Name</button>
 <script>
-
+function dislayName() {
+  let yourName;
+  do {
+  yourName = prompt("Who are you?");
+  } while (!yourName);
+  // document.write(yourName);
+  alert("Okay " + yourName);
+}
 </script>
 </textarea>
-
-          <script>
           
+          <br>
+          <button onClick="dislayName();" class="btn btn-default">Ask for Name</button>
+          <script>
+          function dislayName() {
+            let yourName;
+            do {
+            yourName = prompt("Who are you?");
+            } while (!yourName);
+            // document.write(yourName);
+            alert("Okay " + yourName);
+          }
           </script>          
         </div>
       </div>

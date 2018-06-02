@@ -4,7 +4,7 @@ https://eloquentjavascript.net/Eloquent_JavaScript.pdf
 JS Operators help
 https://www.w3schools.com/jsref/jsref_operators.asp
 
-Variavle Types / Data Types
+Variable Types / Data Types
 https://www.w3schools.com/js/js_datatypes.asp
 
 var length = 16;                               // Number
