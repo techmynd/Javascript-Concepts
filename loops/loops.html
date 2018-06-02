@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>JS Loops</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+</head>
+<body>
+    <br><br>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>For Loop</h3>
+<P>
+for (statement 1; statement 2; statement 3) {<br>
+    code block to be executed<br>
+}            
+</P>
+        </div>
+        <div class="col-md-4">
+
+<textarea rows="9" class="form-control">
+<script>
+var text = "";
+var i;
+for (i = 0; i < 5; i++) {
+    text += "The number is " + i + "<br>";
+}
+document.write(text);
+</script>
+</textarea>
+          
+          <script>
+          var text = "";
+          var i;
+          for (i = 0; i < 5; i++) {
+              text += "The number is " + i + "<br>";
+          }
+          document.write(text);
+          </script>
+
+        </div>
+        <div class="col-md-4">
+
+<textarea rows="9" class="form-control">
+<script>
+for(var counter = 0; counter<5; counter=counter+1){
+  document.write("Counter is now " + counter + " ... <br>");    
+}
+</script>
+</textarea>
+
+          <script>
+          for(var counter = 0; counter<5; counter=counter+1){
+            document.write("Counter is now " + counter + " ... <br>");    
+          }
+          </script>
+        </div>
+        <div class="col-md-4">
+
+        <p>for/in loop - loop through the properties of an object</p>
+
+<textarea rows="9" class="form-control">
+<script>
+var cars = ["BMW", "Volvo", "Ford", "Audi"];
+var text = "";
+var i;
+for (i = 0; i < cars.length; i++) {
+    text += cars[i] + "<br>";
+}
+document.write(text);
+</script>
+</textarea>
+
+          <script>
+          var cars = ["BMW", "Volvo", "Ford", "Audi"];
+          var text = "";
+          var i;
+          for (i = 0; i < cars.length; i++) {
+              text += cars[i] + "<br>";
+          }
+          document.write(text);
+          </script>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>While Loop</h3>
+        </div>
+        <div class="col-md-6">
+
+<textarea rows="9" class="form-control">
+<script>
+var number = 0;
+while (number <= 12) {
+document.write(number + " ");
+number = number + 2;
+}
+</script>
+</textarea>
+
+          <script>
+          var number = 0;
+          while (number <= 12) {
+          document.write(number + " ");
+          number = number + 2;
+          }
+          </script>
+        </div>
+        <div class="col-md-6">
+<textarea rows="9" class="form-control">
+<script>
+
+</script>
+</textarea>
+
+          <script>
+          
+          </script>          
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Do While Loop</h3>
+        </div>
+        <div class="col-md-6">
+
+<textarea rows="9" class="form-control">
+<script>
+var number = 0;
+document.write(number + " ");
+do {
+number = number + 2;
+document.write(number + " ");
+}
+while (number <= 10);
+</script>
+</textarea>
+
+          <script>
+          var number = 0;
+          document.write(number + " ");
+          do {
+          number = number + 2;
+          document.write(number + " ");
+          }
+          while (number <= 10);
+          </script>
+        </div>
+        <div class="col-md-6">
+<textarea rows="9" class="form-control">
+<script>
+
+</script>
+</textarea>
+
+          <script>
+          
+          </script>          
+        </div>
+      </div>
+    </div>
+
+
+
+		
+    <br><br>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  
+</body>
+</html>

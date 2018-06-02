@@ -1,0 +1,6 @@
+JS ebook
+https://eloquentjavascript.net/Eloquent_JavaScript.pdf
+
+JS Operators help
+https://www.w3schools.com/jsref/jsref_operators.asp
+
