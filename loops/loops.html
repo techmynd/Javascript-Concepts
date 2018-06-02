@@ -47,6 +47,13 @@ document.write(text);
         </div>
         <div class="col-md-4">
 
+        <p>
+        Different conditions<br>
+        for(var counter = 0; counter<10; counter=counter+1)<br>
+        for(var counter = 0; counter<10; counter=counter+=10)<br>
+        for(var counter = 0; counter<10; counter=counter+2)<br>
+        for(var counter = 0; counter<10; counter++)</p>
+
 <textarea rows="9" class="form-control">
 <script>
 for(var counter = 0; counter<5; counter=counter+1){
@@ -100,6 +107,11 @@ document.write(text);
       <div class="row">
         <div class="col-md-12">
           <h3>While Loop</h3>
+          <p>
+          while(condition)<br>
+          > what to do / statement<br>
+          > increment or decrement
+          </p>
         </div>
         <div class="col-md-6">
 
@@ -124,12 +136,20 @@ number = number + 2;
         <div class="col-md-6">
 <textarea rows="9" class="form-control">
 <script>
-
+var counter = 0;
+while(counter<5){
+  document.write(counter + " ");
+  counter = counter+1;
+}
 </script>
 </textarea>
 
           <script>
-          
+          var counter = 0;
+          while(counter<5){
+            document.write(counter + " ");
+            counter = counter+1;
+          }
           </script>          
         </div>
       </div>
@@ -182,10 +202,125 @@ while (number <= 10);
       </div>
     </div>
 
+    <br><br>
+    <hr>
+    <br><br>
 
 
+    <div class="container">
+      <h4>Loop Resources</h4>
+
+      <a href="https://eloquentjavascript.net/code/#2" target="_blank">EloquentJavascript Solution to these loops</a>
+
+      <div class="row">
+        
+        <div class="col-md-4">
+          <h4># Triangle Loop</h4>
+<textarea rows="9" class="form-control">
+<script>
+var num_rows = 7;
+for(var row = 0; row < num_rows; row++){
+  var toPrint = "#";
+  for(var column =0; column<row; column++){
+    toPrint += "#";
+  }
+  document.write(toPrint + "<br>");
+  // console.log(toPrint);
+}
+</script>
+</textarea>
+
+        <script>
+        var num_rows = 7;
+        for(var row = 0; row < num_rows; row++){
+          var toPrint = "#";
+          for(var column =0; column<row; column++){
+            toPrint += "#";
+          }
+          document.write(toPrint + "<br>");
+          // console.log(toPrint);
+        }
+        </script>
+        </div>
+
+        <div class="col-md-4">
+          <h4>Fizzbuzz Loop</h4>
+<textarea rows="9" class="form-control">
+<script>
+for (var i=1; i < 10; i++){
+  if (i % 15 == 0) document.write("FizzBuzz <br>");
+  else if (i % 3 == 0) document.write("Fizz <br>");
+  else if (i % 5 == 0) document.write("Buzz <br>");
+  else document.write(i + "<br>");
+}
+</script>
+</textarea>
+
+        <script>
+        for (var i=1; i < 10; i++){
+          if (i % 15 == 0) document.write("FizzBuzz <br>");
+          else if (i % 3 == 0) document.write("Fizz <br>");
+          else if (i % 5 == 0) document.write("Buzz <br>");
+          else document.write(i + "<br>");
+        }
+        </script>          
+        </div>
+
+        <div class="col-md-4">
+          <h4>Chessboard Loop</h4>
+<textarea rows="9" class="form-control">
+<script>
+var size = 8;
+var board = "";
+for (var y = 0; y < size; y++) {
+  for (var x = 0; x < size; x++) {
+    if ((x + y) % 2 == 0)
+      board += "&nbsp;";
+    else
+      board += "#";
+  }
+  board += "<br>";
+}
+document.write(board);
+</script>
+</textarea>
+
+        <script>
+        var size = 8; //this is the variable setting
+        var board = ""; //this is the empty string we're going to add either ' ' , '#' or newline
+        for (var y = 0; y < size; y++) { /*in the outer loop we add newline to seperate rows*/
+          for (var x = 0; x < size; x++) { /*every inner loop rappresents a line, and alternatively it's adding either ' ' or '#' to the string that's being populated*/
+            if ((x + y) % 2 == 0)
+              board += "&nbsp;";
+            else
+              board += "#";
+          }
+          board += "<br>";
+        }
+        document.write(board);
+        </script>          
+        </div>
+
+      </div>  
+
+    </div>  
+
+
+    <br><br>
+    <hr>
+    <br><br>
+
+<div class="container">
+  <h4>Loop Resources</h4>
+
+  <a href="https://www.youtube.com/watch?v=PpbFyLTtpWI" target="_blank">https://www.youtube.com/watch?v=PpbFyLTtpWI</a><br>
+  <a href="https://www.youtube.com/watch?v=U87UmD-5h4o" target="_blank">https://www.youtube.com/watch?v=U87UmD-5h4o</a><br>
+  <a href="https://www.youtube.com/watch?v=QSuTH0C_3_Y" target="_blank">https://www.youtube.com/watch?v=QSuTH0C_3_Y</a><br>
+  <a href="https://www.youtube.com/watch?v=Coxgr66EwRk" target="_blank">https://www.youtube.com/watch?v=Coxgr66EwRk</a>
+</div>
 		
     <br><br>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
