@@ -25,12 +25,41 @@
               function fnRandom(){
                 alert("Hello World");
               }
-
               setTimeout(fnRandom, 5000);
             </script>
 
           </p>
 
+             <script>
+              // setTimeout(function(){
+              //   alert("Hello World");
+              // }, 5000);
+            </script>           
+
+        </div>
+
+
+        <div class="col-md-6">
+        <p>Via Calling a Function</p>
+<textarea class="form-control" rows="6">
+<script>
+function fnRandom(){
+  alert("Hello World");
+}
+setTimeout(fnRandom, 5000);
+</script>            
+</textarea>          
+        </div>
+
+        <div class="col-md-6">
+        <p>Via Annonymous Function</p>
+<textarea class="form-control" rows="6">
+<script>
+setTimeout(function(){
+  alert("Hello World");
+}, 5000);
+</script>            
+</textarea>                    
         </div>
         
       </div><!--.row ends-->
