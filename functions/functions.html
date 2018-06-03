@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>JS Functions</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <br><br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Functions</h3>
+          <p>Function can be executed once with same name. Second time it gives error of "Identifier 'function name' has already been declared".</p>
+        </div>
+        <div class="col-md-4">
+
+<textarea rows="9" class="form-control">
+<script>
+const makeNoise = function() {
+document.write("Pling!");
+}
+makeNoise();
+</script>
+</textarea>
+          
+          <script>
+          const makeNoise = function() {
+          document.write("Pling!");
+          }
+          makeNoise();
+          </script>
+
+        </div><!--.col-md-4 ends-->
+
+        <div class="col-md-4">
+
+<textarea rows="9" class="form-control">
+<script>
+function makeNoise2() {
+document.write("Pling!");
+}
+makeNoise2();
+</script>
+</textarea>
+          
+          <script>
+          function makeNoise2() {
+          document.write("Pling!");
+          }
+          makeNoise2();
+          </script>
+
+        </div><!--.col-md-4 ends-->
+
+        <div class="col-md-4">
+
+        <p>Return is used where function uses parameters to process values by calling function and values of those parameters.</p>
+
+<textarea rows="9" class="form-control">
+<script>
+function fnName(p1, p2) {
+  return p1 * p2;
+}
+document.write(fnName(4, 3));
+</script>
+</textarea>
+          
+          <script>
+          function fnName(p1, p2) {
+            return p1 * p2;
+          }
+          document.write(fnName(4, 3));
+          </script>
+
+          <br><br>
+
+        </div><!--.col-md-4 ends-->   
+
+        <br><br>
+
+        <div class="col-md-4">
+
+<textarea rows="9" class="form-control">
+<script>
+const power = function(base, exponent) {
+let result = 1;
+  for (let count = 0; count < exponent; count++) {
+    result *= base;
+  }
+return result;
+}
+document.write(power(2, 4));
+</script>
+</textarea>
+          
+          <script>
+          const power = function(base, exponent) {
+          let result = 1;
+            for (let count = 0; count < exponent; count++) {
+              result *= base;
+            }
+          return result;
+          }
+          document.write(power(2, 4));
+          </script>
+
+        </div><!--.col-md-4 ends-->
+
+        <div class="col-md-4">
+
+<textarea rows="9" class="form-control">
+<script>
+function toCelsius(fht) {
+    // (9/5 * C) + 32 = Fahrenheit
+    // 5/9 * (F – 32) = Celsius
+    return (5/9) * (fht-32);
+}
+document.write(toCelsius(77));
+</script>
+</textarea>
+          
+          <script>
+          function toCelsius(fht) {
+              // (9/5 * C) + 32 = Fahrenheit
+              // 5/9 * (F – 32) = Celsius
+              return (5/9) * (fht-32);
+          }
+          document.write(toCelsius(77));
+          </script>
+
+        </div><!--.col-md-4 ends-->
+
+        <div class="col-md-4">
+
+<textarea rows="9" class="form-control">
+<script>
+function greet(who) {
+document.write("Hello " + who);
+}
+greet("Harry");
+</script>
+</textarea>
+          
+          <script>
+          function greet(who) {
+          document.write("Hello " + who);
+          }
+          greet("Harry");
+          </script>
+
+        </div><!--.col-md-4 ends-->                
+
+      </div><!--.row ends-->
+    </div><!--.container ends-->
+        
+
+        
+
+
+
+		
+    <br><br>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  
+</body>
+</html>
