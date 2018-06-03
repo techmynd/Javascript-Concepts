@@ -160,7 +160,7 @@ greet("Harry");
         </div><!--.col-md-4 ends-->
 
         <div class="col-md-12">
-
+<h4>Different greeting for different ppl via function</h4>
 <textarea rows="9" class="form-control">
 <script>
 function greetFn(name, numberOfDogs, isSunny) {
@@ -196,8 +196,10 @@ greetFn("John", 12, "nottrue");
         </div><!--.col-md-12 ends-->
 
 
- <div class="col-md-12">
+<br><br>
 
+ <div class="col-md-12">
+<h4>Use values from two functions</h4>
 <textarea rows="9" class="form-control">
 <script>
 function fnAdd(a,b){
@@ -224,7 +226,134 @@ document.write(answer1+answer2);
           document.write(answer1+answer2);
           </script>
 
-        </div><!--.col-md-12 ends-->                            
+        </div><!--.col-md-12 ends-->
+
+
+        <div class="col-md-12">
+<h4>Calculate Minimum Value</h4>
+<textarea rows="9" class="form-control">
+<script>
+function fnCalcMin(c,d){
+  return Math.min(c,d);
+}
+document.write("Smaller from 4 and 7 is >> " + fnCalcMin(4,7));
+document.write("<br>");
+document.write("Smaller from 10 and 2 is >> " + fnCalcMin(10,2));
+</script>
+</textarea>
+          
+          <script>
+          function fnCalcMin(c,d){
+            return Math.min(c,d);
+          }
+          document.write("Smaller from 4 and 7 is >> " + fnCalcMin(4,7));
+          document.write("<br>");
+          document.write("Smaller from 10 and 2 is >> " + fnCalcMin(10,2));
+          </script>
+
+        </div><!--.col-md-12 ends-->        
+
+
+<br><br>
+
+        <div class="col-md-12">
+<h4>Test the number is even or odd - elequent js ebook - chapter 3 - function exercise</h4>
+<textarea rows="9" class="form-control">
+<script>
+function isEven(num) {
+  num = Math.abs(num); //convert to absolute value to account for negative numbers
+  if (num === 0)
+      return true;
+  else if (num === 1)
+      return false;
+  else
+      return isEven(num - 2);
+}
+document.write("50 >> " + isEven(50) + "<br>");
+if (isEven(50) == true) {document.write("its even! <br><br>");} else {document.write("its odd! <br><br>");}
+document.write("75 >> " + isEven(75) + "<br>");
+if (isEven(75) == true) {document.write("its even! <br><br>");} else {document.write("its odd! <br><br>");}
+document.write("-1 >> " + isEven(-1) + "<br>");
+if (isEven(-1) == true) {document.write("its even! <br><br>");} else {document.write("its odd! <br><br>");}
+</script>
+</textarea>
+          
+          <script>
+          function isEven(num) {
+              num = Math.abs(num); //convert to absolute value to account for negative numbers
+              if (num === 0)
+                  return true;
+              else if (num === 1)
+                  return false;
+              else
+                  return isEven(num - 2);
+          }
+          document.write("50 >> " + isEven(50) + "<br>");
+          if (isEven(50) == true) {document.write("its even! <br><br>");} else {document.write("its odd! <br><br>");}
+          document.write("75 >> " + isEven(75) + "<br>");
+          if (isEven(75) == true) {document.write("its even! <br><br>");} else {document.write("its odd! <br><br>");}
+          document.write("-1 >> " + isEven(-1) + "<br>");
+          if (isEven(-1) == true) {document.write("its even! <br><br>");} else {document.write("its odd! <br><br>");}
+          </script>
+
+        </div><!--.col-md-12 ends-->    
+
+<br><br>
+
+
+        <div class="col-md-12">
+<h4>Bean Counting - elequent js ebook - chapter 3 - function exercise</h4>
+<textarea rows="9" class="form-control">
+<script>
+function countBs(str) {
+    return str.match(/B/g).length;
+}
+function countChar(str, character) {
+    var matchExp = new RegExp(character, 'g');
+    return str.match(matchExp).length;
+}
+function countChar2(str, character) {
+    var count = 0;
+    for (var i = 0; i < str.length; i++) {
+        if (str[i] === character)
+            count++;
+    }
+    return count;
+}
+document.write("B comes in BCC >> " + countBs('BBC') + " times<br>");
+document.write("k comes in kakkerlak >> " + countChar('kakkerlak', 'k') + " times <br>");
+document.write("k comes in kakkekekkkkkkkekrlak >> " + countChar2('kakkekekkkkkkkekrlak', 'k') + " times <br>");
+</script>
+</textarea>
+          
+          <script>
+            function countBs(str) {
+                return str.match(/B/g).length;
+            }
+            function countChar(str, character) {
+                var matchExp = new RegExp(character, 'g');
+                return str.match(matchExp).length;
+            }
+            function countChar2(str, character) {
+                var count = 0;
+                for (var i = 0; i < str.length; i++) {
+                    if (str[i] === character)
+                        count++;
+                }
+                return count;
+            }
+
+document.write("B comes in BCC >> " + countBs('BBC') + " times<br>");
+document.write("k comes in kakkerlak >> " + countChar('kakkerlak', 'k') + " times <br>");
+document.write("k comes in kakkekekkkkkkkekrlak >> " + countChar2('kakkekekkkkkkkekrlak', 'k') + " times <br>");
+
+          </script>
+
+        </div><!--.col-md-12 ends-->   
+
+
+<br><br>
+
 
       </div><!--.row ends-->
     </div><!--.container ends-->
