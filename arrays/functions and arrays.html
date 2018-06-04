@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>JS Functions & Arrays</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <br><br>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        <h3>Assignment</h3>
+          <p>Write a range function that takes two arguments, start and end, and returns an array containing all the numbers from start up to (and including) end.<br>
+          Next, write a sum function that takes an array of numbers and returns the sum of these numbers. Run the example program and see whether it does indeed return 55.<br>
+          Modify your range function to take an optional third argument that indicates the “step” value used when building the array. If no step is given, the elements go up by increments of one, corresponding to the old behavior. The function call range(1, 10, 2) should return [1, 3, 5, 7, 9]. Make sure it also works with negative step values so that range(5, 2, -1) produces [5, 4, 3, 2].
+          </p>
+        </div>
+        <div class="col-md-12">
+
+<textarea class="form-control" rows="9">
+<script>
+function range(start, end, step = start < end ? 1 : -1) {
+  let array = [];
+
+  if (step > 0) {
+    for (let i = start; i <= end; i += step) array.push(i);
+  } else {
+    for (let i = start; i >= end; i += step) array.push(i);
+  }
+  return array;
+}
+
+function sum(array) {
+  let total = 0;
+  for (let value of array) {
+    total += value;
+  }
+  return total;
+}
+
+document.write("range(1, 10) > " + range(1, 10) + "<br>");
+// → [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+document.write("range(5, 2, -1) > " + range(5, 2, -1) + "<br>");
+// → [5, 4, 3, 2]
+document.write("sum(range(1, 10)) > " + sum(range(1, 10)) + "<br>");
+// → 55
+</script>  
+</textarea>
+
+<br>
+
+          <script>
+function range(start, end, step = start < end ? 1 : -1) {
+  let array = [];
+
+  if (step > 0) {
+    for (let i = start; i <= end; i += step) array.push(i);
+  } else {
+    for (let i = start; i >= end; i += step) array.push(i);
+  }
+  return array;
+}
+
+function sum(array) {
+  let total = 0;
+  for (let value of array) {
+    total += value;
+  }
+  return total;
+}
+
+document.write("range(1, 10) > " + range(1, 10) + "<br>");
+// → [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+document.write("range(5, 2, -1) > " + range(5, 2, -1) + "<br>");
+// → [5, 4, 3, 2]
+document.write("sum(range(1, 10)) > " + sum(range(1, 10)) + "<br>");
+// → 55
+          </script>
+
+        </div><!--.col-md-4 ends-->
+      </div>
+    </div>
+
+		
+    <br><br>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  
+</body>
+</html>
