@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>JS Concepts</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+</head>
+<body>
+    <br><br>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>On Image Hover Change Image Source</h3>
+          <p>In a case where we have to switch image source on same image hover, this example is useful.</p>
+        </div>
+        <div class="col-md-12">
+
+<textarea rows="9" class="form-control">
+<script>
+var sourceSwap = function () {
+    var $this = $(this);
+    var newSource = $this.data('alt-src');
+    $this.data('alt-src', $this.attr('src'));
+    $this.attr('src', newSource);
+}
+$(function () {
+    $('img.xyz').hover(sourceSwap, sourceSwap);
+});
+</script>
+</textarea>
+
+<br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <img class="xyz" data-alt-src="http://cdn1.iconfinder.com/data/icons/fatcow/32/accept.png" src="http://cdn1.iconfinder.com/data/icons/fatcow/32/cancel.png">
+      <br/>
+      <img class="xyz" data-alt-src="http://cdn1.iconfinder.com/data/icons/fatcow/32/accept.png" src="http://cdn1.iconfinder.com/data/icons/fatcow/32/cancel.png">
+      <br/>
+      <img class="xyz" data-alt-src="http://cdn1.iconfinder.com/data/icons/fatcow/32/accept.png" src="http://cdn1.iconfinder.com/data/icons/fatcow/32/cancel.png">
+    </div>
+  </div>
+
+  <br><br>
+  <a href="https://stackoverflow.com/questions/17507870/jquery-image-changing-on-hover" target="_blank">Link</a>
+  <br><br>
+
+</div>
+
+        </div>
+
+      </div>
+   </div>   
+
+    <br><br>
+
+		
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script>
+    var sourceSwap = function () {
+        var $this = $(this);
+        var newSource = $this.data('alt-src');
+        $this.data('alt-src', $this.attr('src'));
+        $this.attr('src', newSource);
+    }
+    $(function () {
+        $('img.xyz').hover(sourceSwap, sourceSwap);
+    });
+  </script>
+</body>
+</html>

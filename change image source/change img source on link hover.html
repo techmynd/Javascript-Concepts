@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>JS Concepts</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+</head>
+<body>
+    <br><br>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>On Link Hover Change Target Image Source</h3>
+          <p>In a case where we have to change images on different link hovers or clicks, this example is useful.</p>
+        </div>
+        <div class="col-md-12">
+
+<textarea rows="9" class="form-control">
+<script>
+$("a").hover(function(){
+ var newImage = $(this).attr("data-img");
+ $("#targetImg").attr("src",newImage);
+});
+</script>
+<ul class="list-unstyled">
+  <li><a href="#" data-img="img1.png">Plane 1</a></li>
+  <li><a href="#" data-img="img2.png">Plane 2</a></li>
+  <li><a href="#" data-img="img3.png">Plane 3</a></li>
+</ul>
+<div class="img-container">
+    <img src="img1.png" style="max-width:100px;" id="targetImg">
+</div>
+</textarea>
+
+<br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <ul class="list-unstyled">
+        <li><a href="#" data-img="img1.png">Plane 1</a></li>
+        <li><a href="#" data-img="img2.png">Plane 2</a></li>
+        <li><a href="#" data-img="img3.png">Plane 3</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <div class="img-container">
+          <img src="img1.png" style="max-width:100px;" id="targetImg">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+        </div>
+
+      </div>
+   </div>   
+
+    <br><br>
+
+		
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script>
+    $("a").hover(function(){
+     var newImage = $(this).attr("data-img");
+     $("#targetImg").attr("src",newImage);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>JS Loops</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+</head>
+<body>
+    <br><br>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Add Class and Id to all images via loop</h3>
+          <p>Following example loops through images and adds incremented class and id to all images.</p>
+        </div>
+        <div class="col-md-12">
+
+<textarea rows="9" class="form-control">
+<script>
+for (x=0;x<$(".img-viewer").children('img').length;x++){
+    var thisImg = $(".img-viewer").children('img')[x];
+    thisImg.id = x+1;
+    var newClass = thisImg.id;
+    $(thisImg).addClass(newClass);
+}
+</script>
+<div class="img-viewer">
+    <img src="img1.png" style="max-width:100px;">
+    <img src="img2.png" style="max-width:100px;">
+    <img src="img3.png" style="max-width:100px;">
+</div>
+</textarea>
+
+<br><br>
+
+<div class="img-viewer">
+    <img src="img1.png" style="max-width:100px;">
+    <img src="img2.png" style="max-width:100px;">
+    <img src="img3.png" style="max-width:100px;">
+</div>
+
+        </div>
+
+      </div>
+   </div>   
+
+    <br><br>
+
+		
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script>
+            for (x=0;x<$(".img-viewer").children('img').length;x++){
+                var thisImg = $(".img-viewer").children('img')[x];
+                thisImg.id = x+1;
+                var newClass = thisImg.id;
+                $(thisImg).addClass(newClass);
+            }
+          </script>
+</body>
+</html>
