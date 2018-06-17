@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Object Arrays Json</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <br><br>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        <h3>Read Simple Array and List Values via Loop</h3>
+        </div>
+        <div class="col-md-12">
+
+<textarea class="form-control" rows="9">
+<span id="demo"></span>
+<script>
+var myObj, i, x = "";
+myObj = {
+    "name":"John",
+    "age":30,
+    "cars":[ "Ford", "BMW", "Fiat" ]
+};
+for (i = 0; i < myObj.cars.length; i++) {
+    x += myObj.cars[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = x;
+</script>
+</textarea>
+
+<br>
+
+<span id="demo"></span>
+
+<script>
+var myObj, i, x = "";
+myObj = {
+    "name":"John",
+    "age":30,
+    "cars":[ "Ford", "BMW", "Fiat" ]
+};
+for (i = 0; i < myObj.cars.length; i++) {
+    x += myObj.cars[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = x;
+</script>
+        
+
+        </div><!--.col-md-4 ends-->
+      </div>
+    </div>
+
+		
+    <br><br>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>JS Functions - Advanced</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <br><br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Advanced Functions - Syntax Hell</h3>
+          <p>Different ways to use/declare JS functions</p>
+        </div>
+        <div class="col-md-4">
+
+<textarea rows="9" class="form-control">
+<script>
+function myFnc(){
+  // same thing
+}
+</script>
+</textarea>
+ 
+        </div><!--.col-md-4 ends-->
+
+        <div class="col-md-4">
+
+<textarea rows="9" class="form-control">
+<script>
+var myFnc = function(){
+  // same thing
+}
+</script>
+</textarea>
+ 
+        </div><!--.col-md-4 ends-->
+
+        <div class="col-md-4">
+
+<textarea rows="9" class="form-control">
+<script>
+const myFnc = () => {
+  // for const, => is necessary
+}
+</script>
+</textarea>
+ 
+        </div><!--.col-md-4 ends-->
+
+<div style="clear:both;"></div>
+
+
+        <div class="col-md-4">
+
+<textarea rows="9" class="form-control">
+<script>
+function printMyName(){
+  console.log(name);
+  // name is argumaent here
+}
+printMyName('Max');
+</script>
+</textarea>
+ 
+        </div><!--.col-md-4 ends-->
+
+        <div class="col-md-4">
+
+<textarea rows="9" class="form-control">
+<script>
+const printMyName = (name) => {
+  console.log(name);
+  // name is argumaent here
+}
+printMyName('Max');
+</script>
+</textarea>
+ 
+        </div><!--.col-md-4 ends-->
+
+        <div class="col-md-4">
+
+<textarea rows="9" class="form-control">
+<script>
+const printMyName = name => {
+  console.log(name);
+  // name is argumaent here
+  // you can omit () from above name argumaent but in case of one argument
+}
+printMyName('Max');
+</script>
+</textarea>
+ 
+        </div><!--.col-md-4 ends-->                
+ 
+<div style="clear:both;"></div>
+
+        <div class="col-md-4">
+
+<textarea rows="9" class="form-control">
+<script>
+const printMyName = () => {
+  console.log('Max');
+}
+printMyName();
+</script>
+</textarea>
+ 
+        </div><!--.col-md-4 ends-->                
+
+
+        <div class="col-md-4">
+
+<textarea rows="9" class="form-control">
+<script>
+const printMyName = (name, age) => {
+  console.log(name, age);
+  // name is argumaent here
+  // you can omit () from above name argumaent but in case of one argument
+}
+printMyName('Max', 28);
+</script>
+</textarea>
+ 
+        </div><!--.col-md-4 ends-->                
+
+
+        <div class="col-md-4">
+
+<textarea rows="9" class="form-control">
+<script>
+const multiply = (number) => {
+  return number * 2;
+}
+console.log(multiply(2));
+</script>
+</textarea>
+ 
+        </div><!--.col-md-4 ends-->                                
+
+<div style="clear:both;"></div>
+
+        <div class="col-md-4">
+
+<textarea rows="9" class="form-control">
+<script>
+const multiply = (number) => number * 2;
+console.log(multiply(2));
+</script>
+</textarea>
+ 
+        </div><!--.col-md-4 ends-->
+
+        <div class="col-md-4">
+
+<textarea rows="9" class="form-control">
+<script>
+const multiply = number => number * 2;
+console.log(multiply(2));
+</script>
+</textarea>
+ 
+        </div><!--.col-md-4 ends-->        
+
+<div style="clear:both;"></div>
+
+
+
+<div style="clear:both;"></div>
+
+<br><br>
+
+
+      </div><!--.row ends-->
+    </div><!--.container ends-->
+        
+
+        
+
+
+
+		
+    <br><br>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  
+</body>
+</html>
