@@ -34,7 +34,8 @@ var moviesList = '{"movies": [' +
 
 // parses a JSON string
 var randomOBJ = JSON.parse(moviesList);
-var x;
+var x = "";
+// use var x = ""; and not var x; otherwise first result will be undefined
 for (var i = 0; i < randomOBJ.movies.length; i++) {
     x += "Movie Name: " + randomOBJ.movies[i].title + ", " + 
       "Release Time: " + randomOBJ.movies[i].releaseYear + 
@@ -58,7 +59,7 @@ var moviesList = '{"movies": [' +
 
 // parses a JSON string
 var randomOBJ = JSON.parse(moviesList);
-var x;
+var x = "";
 for (var i = 0; i < randomOBJ.movies.length; i++) {
     x += "Movie Name: " + randomOBJ.movies[i].title + ", " + 
       "Release Time: " + randomOBJ.movies[i].releaseYear + 
