@@ -1,0 +1,138 @@
+Concatination
+=============
+var a = 10, b = 5 ;
+var z = a + " is greater than " + b + " some more text ";
+
+x=x+y;
+x+=y;
+x value is x+y
+
+x=x-y;
+x-=y;
+x is equal to x-y
+
+x=x*y;
+x*=y;
+
+x = y	x = y
+x += y	x = x + y
+x -= y	x = x - y
+x *= y	x = x * y
+x /= y	x = x / y
+x %= y	x = x % y
+x **= y 	x = x ** y
+x <<= y		x = x << y
+x >>= y		x = x >> y
+x >>>= y	x = x >>> y
+x &= y		x = x & y
+x ^= y		x = x ^ y
+x |= y		x = x | y
+
+
+Conditional (Ternary) Operator
+==============================
+if else
+if x > 4 return 1 else return 0
+
+var x = 5;
+var result = (x > 4) ? 1 : 0;
+// var result = (x > 4) ? "correct" : "not correct";
+
+
+
+INNER-HTML
+==========
+var myvar = "something";
+document.getElementById("demo").innerHTML = myvar;
+
+VALUE
+=====
+e.g. Type in Input
+document.getElementById("demo").value = "some name";
+
+
+
+Increment/Decrement
+===================
+Pre Increment ++x
+Post increment x++
+Pre decrement --x
+Post decrement x--
+
+
+
+Comparison Operators
+====================
+==	equal to
+===	equal value and equal type
+!=	not equal
+!==	not equal value or not equal type
+>	greater than
+<	less than
+>=	greater than or equal to
+<=	less than or equal to
+
+
+Logical Operators
+=================
+&&	and
+||	or
+!	not >>>>>>>> !(x == y)
+
+
+
+
+Functions
+=========
+Functions have Arguments
+
+arguments.length;
+Returns the number of arguments in a function
+
+function func_name (arg1, arg2) {
+	var how_many = arguments.length;
+	console.log(how_many);
+}
+
+
+
+Classes / Objects
+=====================================
+There is no class in JS, just objects
+Object has properties and methods
+
+
+var person = {
+  firstName:"John", 
+  age:50
+};
+
+// call it like 
+person['firstName']
+// or
+person.firstName
+
+
+var person = {
+  firstName:"John", 
+  age:50,
+
+  show:function(){
+  	alert( this.age );
+  }
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+

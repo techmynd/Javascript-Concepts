@@ -1,0 +1,13 @@
+var x = 4;
+if( x != 5  )
+{
+	alert("not 5");
+}
+else if( x != 6  )
+{
+	alert("not 6");
+}
+else
+{
+	alert("x is 4");
+}
