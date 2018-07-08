@@ -1,0 +1,10 @@
+
+JavaScript Date Reference
+https://www.w3schools.com/jsref/jsref_obj_date.asp
+
+Date Methods
+https://www.w3schools.com/js/js_date_methods.asp
+
+Date Objects
+https://www.w3schools.com/js/js_dates.asp
+

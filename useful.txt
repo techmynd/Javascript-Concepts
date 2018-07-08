@@ -51,6 +51,12 @@ e.g. Type in Input
 document.getElementById("demo").value = "some name";
 
 
+NaN > not a number
+var z = "wecew987";
+var checkNumber = isNan(z);
+alert (checkNumber);
+>> true coz its not a number
+
 
 Increment/Decrement
 ===================
