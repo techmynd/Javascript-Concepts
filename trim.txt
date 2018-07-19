@@ -1,0 +1,5 @@
+varname = " ewqde wfwf wfewfewf  ";
+newvalue = varname.trim();
+
+removes spaces from before and after varname
+
