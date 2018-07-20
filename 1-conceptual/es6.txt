@@ -1,0 +1,75 @@
+EcmaScript 6
+============
+
+New features in ES6
+
+- classes
+- Arrow Functions
+- Modules
+- Block Scoping
+- Promises
+
+Classes
+=======
+
+ES6 introduces language support for classes (class keyword), constructors (constructor keyword), and the extend keyword for inheritance.
+
+Arrrrow functions
+=================
+
+Arrrrow functions provide two features: 
+- lexical scoping of the this keyword. 
+- less ceremony when defining an anonymous function.
+
+
+Without arrow functions, every function defines a this value. No more will you need to reassign this.
+
+Arrow functions brought a lot of clarity & code reduction to Javascript.
+
+https://www.sitepoint.com/es6-arrow-functions-new-fat-concise-syntax-javascript/
+
+
+function greetings (name) {
+ return 'hello ' + name
+}
+
+to below code
+
+const greetings = name => `hello ${name}`;
+
+
+
+
+
+Modules
+=======
+
+(import and export keywords)
+Modules in ES6 provide a way to load and manage dependencies via the new import and export keywords.
+
+Block Scoping
+=============
+
+In ES5, variables are either globally or locally function scoped.
+In ES6, you can use the new let keyword to achieve block scoping.
+
+Promises
+========
+
+Promises provide a mechanism to handle the results and errors from asynchronous operations.
+
+You can accomplish the same thing with callbacks, but promises provide improved readability via method chaining and succinct error handling.
+
+
+
+
+https://stackoverflow.com/questions/912479/what-is-the-difference-between-javascript-and-ecmascript
+
+https://en.wikipedia.org/wiki/ECMAScript
+
+https://codeburst.io/es5-vs-es6-with-example-code-9901fa0136fc
+
+https://benmccormick.org/2015/09/14/es5-es6-es2016-es-next-whats-going-on-with-javascript-versioning/
+
+
+
