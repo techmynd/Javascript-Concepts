@@ -1,0 +1,5 @@
+can i push in arrray that is being declared by const?
+https://stackoverflow.com/questions/23436437/why-can-i-change-value-of-a-constant-in-javascript
+
+
+
