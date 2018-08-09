@@ -1,0 +1,3 @@
+no dependency JS gallery
+http://photoswipe.com/
+
