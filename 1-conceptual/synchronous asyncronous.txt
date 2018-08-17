@@ -1,0 +1,8 @@
+asynchoronous > more than one at a time
+event queue ...
+
+synchoronous > one by one
+
+javascript engine is synchronous but the outside environment is also involved and 
+javascript engine process event queue
+

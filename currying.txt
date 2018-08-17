@@ -1,0 +1,11 @@
+function currying
+=================
+
+creating a copy of function with a preset parameters
+
+bind()
+call()
+apply()
+
+methods on the functions objects
+functions are also objects
