@@ -1,0 +1,44 @@
+// note that P is capital for class
+// this will be callsed as > new Person();
+// for new keyword to use , u need capital letter in function/object name 
+
+// in js this class is an object // this is an object and then u create more objects from this object
+
+class Person {
+	
+	constructor(firstname, lastname) {
+		this.firstname = firstname;
+		this.lastname = lastname;
+	}
+
+	// this is method // class method that is available for this class
+	greet() {
+		return 'Hi' + firstname;
+	}
+
+}
+
+var john = new Person('John', 'Doe');
+
+
+// classes can be extended with keyword extends
+
+
+
+
+class InformalPerson extends Person {
+	
+	constructor(firstname, lastname) {
+		super(firstname, lastname);
+	}
+
+	greet() {
+		return 'Yo' + firstname;
+	}
+
+}
+
+
+// extends goes to __proto__ > prototype to find property.
+
+
