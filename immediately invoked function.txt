@@ -1,0 +1,61 @@
+(function initOasis() {
+    console.log("hi, i am oasis");
+}());
+
+or
+
+(function() {
+    console.log("hi, i am oasis");
+}());
+
+or
+
+(function theName(msg, times) {
+    for (var i = 1; i <= times; i++) {
+        console.log(msg);
+    }
+}("Hello!", 5));
+
+or
+
+(function(global) {
+	// ...
+}(window));
+
+or
+
+(function($, global, document) {
+    // use $ for jQuery, global for window
+}(jQuery, window, document));
+
+or
+
+!function() {
+    alert("Hello");
+}();
+// Shows the alert "Hello"
+
+or
+
+void function() {
+    alert("Hello");
+}();
+
+or
+
+(function() {
+    alert("hello");
+}());
+
+or
+
+(function() {
+    alert("hello");
+})();
+
+or
+
+(function(global, $) {
+	// ...
+}(window, jQuery));
+
