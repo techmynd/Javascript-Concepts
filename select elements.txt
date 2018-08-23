@@ -1,0 +1,7 @@
+https://www.w3schools.com/jsref/met_document_queryselector.asp
+
+select first match
+document.querySelector(".example");
+
+select all matches
+var x = document.querySelectorAll(".example");
