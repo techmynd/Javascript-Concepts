@@ -1,0 +1,9 @@
+https://code.tutsplus.com/tutorials/from-jquery-to-javascript-a-reference--net-23703
+http://youmightnotneedjquery.com/
+https://github.com/jackocnr/intl-tel-input/wiki/Converting-jQuery-to-JavaScript
+
+
+
+https://stackoverflow.com/questions/978799/is-there-an-easy-way-to-convert-jquery-code-to-javascript
+
+https://www.htmlgoodies.com/primers/jsp/
