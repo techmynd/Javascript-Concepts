@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>JS</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+</head>
+<body>
+
+    <br><br>
+
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-12">
+          <h2>NameSpace / Like jQuery or $</h2>
+        </div>
+
+
+        <div class="col-md-6">
+<textarea class="form-control" rows="6">
+<script>
+var MJK = (function(){
+  return {
+
+    walk: function(){
+      console.log("walk ...");
+    },
+    run: function(){
+      console.log("run ...");
+    },
+    stop: function(){
+      console.log("stop ...");
+    }
+
+  };
+})();
+
+MJK.walk();
+MJK.run();
+MJK.stop();  
+</script>            
+</textarea>
+see console<br>
+<a href="https://javascriptweblog.wordpress.com/2010/12/07/namespacing-in-javascript/" target="_blank">https://javascriptweblog.wordpress.com/2010/12/07/namespacing-in-javascript/</a><br>
+<a href="https://stackoverflow.com/questions/881515/how-do-i-declare-a-namespace-in-javascript" target="_blank">https://stackoverflow.com/questions/881515/how-do-i-declare-a-namespace-in-javascript</a>
+
+
+        </div>
+        
+      </div><!--.row ends-->
+    </div><!--.container ends-->
+        
+		
+    <br><br>
+
+  <script src="namespace.js"></script>
+  
+
+<script>
+
+ </script>
+
+  
+</body>
+</html>
