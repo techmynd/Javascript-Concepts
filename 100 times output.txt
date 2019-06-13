@@ -1,0 +1,7 @@
+for(var i=0; i<100; i++){
+setTimeout(function(){
+console.log("hi",i);
+}, 100);
+}
+
+what will be the output
